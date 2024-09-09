@@ -262,3 +262,52 @@ background:linear-gradient(to right,#0575e6,#021b79);
     color: var(--hero-heading-color);
 }
   /* course section is ending here */
+
+
+
+
+  @media (max-width: 1400px){
+    html{
+        font-size: 56.25%;
+    }
+    .section-hero img{
+        width: 90%;
+    }
+  }
+  
+  @media (max-width:1200px){
+    html{
+        font-size: 54%;
+    }
+    .section-hero img{
+        width: 90%;
+    }
+  }
+  @media (max-width:981px){
+    .section-hero{
+        height: auto;
+        padding-bottom: 5rem;
+        & .grid-two-cols{
+     grid-template-columns: 1fr;
+
+     & .section-hero-content{
+        order: 2;
+        }
+       & .section-hero-image{
+            order: 1;
+            & img{
+                width: 40%;
+            }
+        }
+  }
+    }
+   }
+
+  @media (max-width:760px){
+   .grid-two-cols, .grid-three-cols{
+    grid-template-columns: 1fr;
+   }
+   .section-navbar .container{
+   flex-direction: column;
+   }
+  }

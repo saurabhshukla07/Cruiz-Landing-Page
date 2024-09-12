@@ -311,3 +311,145 @@ background:linear-gradient(to right,#0575e6,#021b79);
    flex-direction: column;
    }
   }
+
+
+
+  /* Adjust for screens smaller than 600px (mobile devices) */
+@media (max-width: 600px) {
+    html {
+        font-size: 50%; /* Scale down the font size for readability */
+    }
+
+    /* Navbar adjustments */
+    .section-navbar .container {
+        padding: 1.2rem 0;
+        text-align: center;
+    }
+    .section-navbar .navbar ul {
+        flex-direction: column; /* Stack the navbar items */
+        gap: 1.6rem; /* Reduce gap between items */
+    }
+
+    /* Hero section */
+    .section-hero .grid-two-cols {
+        grid-template-columns: 1fr; /* Make hero section single column */
+    }
+
+    .section-hero .section-hero-image img {
+        width: 80%; /* Reduce image size */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .section-hero .hero-heading {
+        font-size: 3.2rem; /* Adjust heading size for small screens */
+    }
+
+    .section-hero .hero-subheading, .section-hero .hero-para {
+        font-size: 1.6rem;
+    }
+
+    /* About Section */
+    .section-about .grid-three-cols {
+        grid-template-columns: 1fr; /* Make it single column */
+        gap: 2.4rem;
+    }
+
+    .section-about img {
+        width: 12rem; /* Reduce image size */
+    }
+
+    /* Course Section */
+    .section-course .grid-four-cols {
+        grid-template-columns: 1fr; /* Stack courses on top of each other */
+        gap: 2.4rem; /* Reduce gap between courses */
+    }
+
+    .course-div {
+        padding: 2.4rem;
+    }
+
+    /* Reduce icon size */
+    .fa-solid {
+        font-size: 1.8rem;
+        padding: 1.8rem;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+    html {
+        font-size: 52.5%; /* Slightly larger font size for tablets */
+    }
+
+    /* Navbar adjustments */
+    .section-navbar .navbar ul {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+
+    /* Hero section */
+    .section-hero .grid-two-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .section-hero .section-hero-image img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* About Section */
+    .section-about .grid-three-cols {
+        grid-template-columns: 1fr;
+        gap: 3.2rem;
+    }
+
+    /* Course Section */
+    .section-course .grid-four-cols {
+        grid-template-columns: 1fr 1fr; /* Display two courses per row */
+    }
+}
+
+/* Larger Smartphones */
+@media (max-width: 480px) {
+    html {
+        font-size: 48%; /* Reduce font size for smaller screens */
+    }
+
+    /* Navbar */
+    .section-navbar .container {
+        padding: 1rem 0;
+    }
+
+    /* Hero section */
+    .section-hero .grid-two-cols {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .section-hero .hero-heading {
+        font-size: 2.8rem; /* Further reduce heading size */
+    }
+
+    .section-hero .hero-subheading {
+        font-size: 1.4rem;
+    }
+
+    .section-hero .hero-para {
+        font-size: 1.4rem;
+    }
+
+    .section-hero .section-hero-image img {
+        width: 60%; /* Reduce image size further */
+        margin: 0 auto;
+    }
+
+    /* About Section */
+    .section-about img {
+        width: 10rem; /* Smaller image size */
+    }
+
+    /* Course Section */
+    .section-course .grid-four-cols {
+        grid-template-columns: 1fr;
+    }
+}
